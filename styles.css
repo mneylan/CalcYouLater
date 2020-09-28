@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.calculator-container {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(7, 100px);
+    min-height: 100vh;
+    justify-content: center;
+    align-content: center;
+    
+    
+}
+
+.span-two {
+grid-column: span 2;
+}
+
+.output {
+    grid-column: span 4;
+    background-color: grey;
+    display: flex;
+    align-items: flex-end;
+    align-content: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+
+.running-output {
+    
+    font-size: 20px;
+    
+}
+
+.display-output {
+   font-size: 30px;
+    
+    
+
+    
+}
