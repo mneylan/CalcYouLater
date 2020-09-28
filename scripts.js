@@ -235,3 +235,108 @@ deleteCharacter.addEventListener('click', function() {
     displayValue = deleted
     display.textContent = displayValue
 });
+
+//keyboard functionality
+
+document.addEventListener('keypress', function(e) {
+    if (e.code != "Digit0") return
+    if (e.code == "Digit0") 
+    
+    display.textContent += "0"
+    displayValue += "0"
+    
+});
+
+document.addEventListener('keypress', function(e) {
+    if (e.code != "Digit1") return
+    if (e.code == "Digit1")
+    display.textContent += "1"
+    displayValue += "1"
+});
+
+document.addEventListener('keypress', function(e) {
+    if (e.code != "Digit2") return
+    if (e.code == "Digit2")
+    display.textContent += "2"
+    displayValue += "2"
+});
+
+document.addEventListener('keypress', function(e) {
+    if (e.code != "Digit3") return
+    if (e.code == "Digit3")
+    display.textContent += "3"
+    displayValue += "3"
+});
+
+document.addEventListener('keypress', function(e) {
+    if (e.code != "Digit4") return
+    if (e.code == "Digit4")
+    display.textContent += "4"
+    displayValue += "4"
+});
+
+document.addEventListener('keypress', function(e) {
+    if (e.code != "Digit5") return
+    if (e.code == "Digit5")
+    display.textContent += "5"
+    displayValue += "5"
+});
+
+document.addEventListener('keypress', function(e) {
+    if (e.code != "Digit6") return
+    if (e.code == "Digit6")
+    display.textContent += "6"
+    displayValue += "6"
+});
+
+document.addEventListener('keypress', function(e) {
+    if (e.code != "Digit7") return
+    if (e.code == "Digit7")
+    display.textContent += "7"
+    displayValue += "7"
+});
+
+document.addEventListener('keypress', function(e) {
+    if (e.code != "Digit8") return
+    if (e.code == "Digit8")
+    display.textContent += "8"
+    displayValue += "8"
+});
+
+document.addEventListener('keypress', function(e) {
+    if (e.code != "Digit9") {return}
+    //if (e.code == "Digit9")
+    display.textContent += "9"
+    displayValue += "9"
+});
+
+document.addEventListener('keypress', function(e) {
+    if (e.code != "Period") {return}
+    if (displayValue.includes('.')) {
+        return
+    }   else { 
+        display.textContent += '.'
+        displayValue += '.' }
+    
+});
+
+document.addEventListener('keypress', function(e) {
+    if (e.code != "Semicolon") {return}
+    if (e.code == "Semicolon") {
+    nextNum = displayValue
+    operate(prevNum, operator, nextNum)
+    display.textContent = operate(prevNum, operator, nextNum)
+    running.textContent = ''
+    displayValue = operate(prevNum, operator, nextNum)
+    plusCounter = 0
+    subtractionCounter = 0
+    multiplicationCounter = 0
+    divisionCounter = 0
+    }
+})
+
+
+
+
+
+
