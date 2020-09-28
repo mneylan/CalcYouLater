@@ -227,3 +227,11 @@ division.addEventListener('click', function() {
     display.textContent = ''
     displayValue = ""
 })
+
+let deleteCharacter = document.querySelector('#del')
+deleteCharacter.addEventListener('click', function() {
+    let stringed = displayValue.toString()
+    let deleted = stringed.slice(0, -1)
+    displayValue = deleted
+    display.textContent = displayValue
+});
